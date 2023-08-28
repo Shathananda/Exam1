@@ -1,0 +1,30 @@
+ <html>
+ <head>
+  <script>
+   function add(){
+   var num1,num2,sum
+   num1=parseInt(document.getElementById(firstnum)).value;
+   num1=parseInt(document.getElementById(secoundnum)).value;
+   sum=num1+num2;
+   document.getElementById(answer).value=sum;
+   }
+   
+   function sub(){
+   var num1,num2,sum
+   num1=parseInt(document.getElementById(firstnum)).value;
+   num1=parseInt(document.getElementById(secoundnum)).value;
+   sum=num1+num2;
+   document.getElementById(answer).value=sum;
+   }
+  
+  </script>
+ </head>
+ <body>
+  <lable for="num1">Enter a firstnumber</lable>
+  <input type="text" id="firstnum" name="num1"/>
+  <lable for="num1">Enter a secoundnumber</lable>
+  <input type="text" id="secoundnum" name="num1"/>
+  <button onclick="add()"> + </button>
+  <button onclick="sub()"> - </button>
+ </body>
+ </html>
