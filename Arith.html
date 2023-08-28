@@ -15,6 +15,20 @@
                  num=num1-num2;
                  document.getElementById("answer").value=num;
                 }
+function mul() {
+                 var num1,num2,rum;
+                 num1=Number(document.getElementById("num1").value);
+                 num2=Number(document.getElementById("num2").value);
+                 rum=num1*num2;
+                 document.getElementById("answer").value=rum;
+                }
+   function div() {
+                 var num1,num2,sum;
+                 num1=Number(document.getElementById("num1").value);
+                 num2=Number(document.getElementById("num2").value);
+                 kum=num1/num2;
+                 document.getElementById("answer").value=kum;
+                }
    
    function reset() {
                  num1=Number(document.getElementById("num1").value="");
@@ -48,7 +62,8 @@
    <input type="text" id="num2" name="num1"/><br/>
    <input type="button" onclick="add()" value="+"/>
    <input type="button" onclick="sub()" value="-"/>
-   
+   <input type="button" onclick="mul()" value="*"/>
+   <input type="button" onclick="div()" value="/"/>
    <input type="button" onclick="reset()" value="C"/><br/>
    <label for="result">Result</label>
    <input type="text" id="answer" name="Result"/>
